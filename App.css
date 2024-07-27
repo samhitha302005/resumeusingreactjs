@@ -1,0 +1,142 @@
+/* Overall App Style */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #282c34; /* Dark gray-blue background */
+  color: #f5f5f5; /* Light gray text */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: #20c997; /* Teal color */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: #20c997; /* Teal color */
+  margin-top: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Container for Form and Resume Preview */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #1e2026; /* Slightly darker background for form section */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Container for Previous Resumes */
+.resumes-container {
+  margin-top: 20px;
+  display: flex; /* Use flexbox for side-by-side layout */
+  flex-wrap: wrap; /* Allow wrapping to next line if needed */
+  gap: 20px; /* Space between resume items */
+  justify-content: center; /* Center align items horizontally */
+}
+
+/* Individual Resume Item */
+.resume-item {
+  padding: 15px;
+  background-color: #20c997; /* Teal background for resumes */
+  color: #282c34; /* Dark gray-blue text */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  flex: 1 1 calc(33% - 20px); /* Adjust item width; 33% width minus gap */
+  max-width: calc(33% - 20px); /* Ensure item width does not exceed 33% */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Button container in resume item */
+.resume-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Edit and Delete Buttons */
+.edit-button, .delete-button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #282c34; /* Dark gray-blue background for buttons */
+  color: #20c997; /* Teal text */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #333; /* Slightly lighter gray for hover effect */
+}
+
+.delete-button:hover {
+  background-color: #d9534f; /* Red for delete button hover */
+}
+
+/* Preview Section */
+.preview {
+  padding: 20px;
+  background-color: #1e2026; /* Darker background for preview */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form div {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #20c997; /* Teal label text */
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #333; /* Dark gray border */
+  background-color: #1e2026; /* Dark input background */
+  color: #f5f5f5; /* Light gray text */
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #20c997; /* Teal border on focus */
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #20c997; /* Teal button */
+  color: #282c34; /* Dark gray-blue text */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #17a589; /* Slightly darker teal for hover effect */
+}
+
+form .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
